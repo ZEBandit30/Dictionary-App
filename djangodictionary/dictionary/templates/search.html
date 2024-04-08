@@ -1,0 +1,18 @@
+<!-- the search page inherits from the base -->
+{% extends 'dictionary/base.html' %}
+
+{% block content %}
+<!-- this will display the searched word -->
+<h4>{{ word }}</h4>
+
+<!-- this will display the word meaning -->
+<p>{{ meanings }}</p>
+
+<hr>
+<!-- this will display the antonym for the word if its available-->
+<p><b>Antonyms</b>:{{ antonym }}</p>
+<hr>
+<!-- this will display the synonym for the word if its available-->
+<p><b>Synonyms</b>:{{ synonym }}</p>
+
+{% endblock %}
